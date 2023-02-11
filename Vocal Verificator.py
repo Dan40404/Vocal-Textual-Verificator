@@ -20,9 +20,9 @@ try:
     while "  " in textToVerify:
         textToVerify = textToVerify.replace("  "," ")
     for i in range(len(textToVerify.split(' '))):
-        wordToVerify = textToVerify.split(' ')[i]
+        wordToVerify = textToVerify.split(' ')[i].lower()
         try:
-            word = text.split(' ')[i]
+            word = text.split(' ')[i].lower()
         except:
             word = "..."
 
